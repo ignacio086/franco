@@ -99,7 +99,7 @@ export default function Home() {
           {
             arr[3].detalles.map((t,i)=>{
               return(
-                <motion.p            initial={{ opacity: 0, y: 30 }}
+                <motion.p      key={i}       initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 ,delay:i}} className="p-2 border-2 rounded-xl w-1/2">{`${t}`}</motion.p >
@@ -467,7 +467,7 @@ export default function Home() {
           {
             arr[0].detalles.map((t,i)=>{
               return(
-                <motion.li           initial={{ opacity: 0, x: -10 }}
+                <motion.li      key={i}      initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}>- {t}</motion.li>
@@ -485,7 +485,7 @@ export default function Home() {
           {
             arr[1].detalles.map((t,i)=>{
               return(
-                <motion.li           initial={{ opacity: 0, x: -10 }}
+                <motion.li  key={i}          initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}>- {t}</motion.li>
@@ -503,7 +503,7 @@ export default function Home() {
           {
             arr[2].detalles.map((t,i)=>{
               return(
-                <motion.li           initial={{ opacity: 0, x: -10 }}
+                <motion.li key={i}           initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}>{t}</motion.li>
